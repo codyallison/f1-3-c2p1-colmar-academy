@@ -1,0 +1,313 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+header{
+  position: relative;
+  z-index: 1;
+  height: 64px;
+  background-color: white;
+  width: 100%;
+
+}
+
+header img{
+  padding-left: 24px;
+}
+#header-left {
+  float: left;
+  padding-top: 12px;
+}
+header span a{
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: verdana, sans-serif;
+}
+nav {
+  padding-top: 24px;
+}
+header .colmar{
+  font-size: 30px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: gray;
+  padding: 20px 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+header .academy{
+  font-size: 30px;
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+  color: lightgray;
+  padding: auto 0px auto 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+.academy .colmar {
+  position: fixed;
+  top: 20px;
+}
+#banner {
+  background-color: lightgray;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+}
+
+#banner-left {
+  padding: 32px 20px 32px 24px;
+  width: 60%;
+  display: table-cell;
+  vertical-align: middle;
+}
+#banner-left img {
+  width: 100%;
+}
+#learn {
+  padding-left: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#learn h1{
+  color: gray;
+}
+#learn h2 {
+  color: gray;
+}
+#bannerbtn {
+  font-size: 20px;
+  border: none;
+
+  text-align: center;
+  text-decoration: none;
+  padding: 8px auto;
+  color: white;
+  background-color: gray;
+  width: 50%;
+}
+.info-flexbox{
+  display: inline-block;
+}
+#info {
+  display: table;
+  width: 100%;
+}
+#info-left{
+  width: 60%;
+  display: table-cell;
+  padding: 32px 24px;
+}
+#info-left img {
+  width: 100%;
+}
+
+#info-left h1 {
+  margin-bottom: 24px;
+}
+#info-left h2 {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#info-right {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 16px;
+}
+.right-flexbox {
+  width: 423px;
+  display: flex;
+}
+
+.right-flexbox img {
+  width: 148px;
+  height: 148px;
+  padding: 16px;
+}
+#courses {
+  background-color: lightgray;
+  display: table;
+  width: 100%;
+  align-content: center;
+
+}
+#courses h1 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.course-row {
+  display: inline-flex;
+  margin: 0 auto;
+  padding-left: 8%;
+  width: 100%;
+
+
+}
+.course-flexbox {
+  margin: 30px;
+  background-color: white;
+
+}
+.course-title {
+  background-color: white;
+}
+.course-details {
+  background-color: white;
+}
+
+
+#thesis {
+  width: 100%;
+}
+#thesis h1 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: auto;
+  width: 100%
+}
+#thesis-left {
+  display: table-cell;
+  width: 60%;
+  padding: 0px 16px 24px 24px;
+
+}
+#thesis-right {
+  display: table-cell;
+  vertical-align: top;
+}
+.thesis-right-flexbox {
+  display: flex;
+}
+#thesis-right img {
+padding: 16px;
+}
+.thesis-right-txt {
+  vertical-align: middle;
+}
+#footer {
+  display: inline;
+}
+#footer h5 {
+  padding-left: 24px;
+  float: left;
+}
+#footer ol {
+  text-decoration-color: black;
+  float: right;
+}
+@media only screen and (min-width: 600px) {
+  #mobile-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header-left {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  #banner {
+    display: block;
+  }
+  header {
+    justify-content: space-around;
+
+  }
+  #mobile-header {
+    width: 100%;
+    height: 64px;
+  }
+  #mobile-header img {
+    padding-top: 12px;
+  }
+  #banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  #banner-left{
+    width: 100%;
+    height: 180px;
+    padding: 0px;
+    flex-direction: column;
+  }
+  #banner-left img {
+    height: 100%;
+  }
+  #learn {
+    padding: 32px 16px;
+  }
+  #info-left {
+    display: none;
+  }
+  #info-right {
+    display: block;
+  }
+  .right-flexbox {
+    display: block;
+    padding-left: 16px;
+  }
+  .right-flexbox img {
+    width: 100%;
+    padding-left: 0px
+  }
+  .right-flexbox h2,p {
+    padding-left: 16px;
+  }
+  #courses h1 {
+    text-align: center;
+  }
+  #courses img {
+    display: none;
+  }
+  .course-details {
+    display: none;
+  }
+  .course-row {
+    display: block;
+    width: 50%;
+
+  }
+  .course-title {
+    display: block;
+    width: 100%;
+    background-color: gray;
+  }
+
+
+  #thesis-right {
+    display: none;
+  }
+  #thesis h1 {
+    text-align: center;
+  }
+  #thesis h2,h3 {
+    display: none;
+  }
+  #thesis-left {
+    padding: 0px 0px 24px 0px;
+  }
+  footer nav {
+    display: none;
+  }
+}
+/* below are commented out because i did not have way of testing mobile experience
+
+@media screen only */
